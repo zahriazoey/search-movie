@@ -70,7 +70,7 @@ function trendingMovies() {
         
         let movieTitles = data.results 
         movieTitles.forEach(movie => {
-            // console.log(movie)
+            console.log(movie)
 
             let movieDiv = document.createElement('div')
             movieDiv.id = 'singleMovieDiv'

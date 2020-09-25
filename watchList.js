@@ -2,8 +2,8 @@ let movieContainer = document.querySelector('.moviesContainer');
 
 function renderMovies(movieData) {
     let movieHtmlArray = movieData.map((currentMovie) => {
-        return `<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
-                <div style='text-align:center; border:5px solid black; width:85%; margin:10px; padding:10px; border-radius:10px;'>
+        return `<div class='col-sm-4 row'>
+                <div class='col'>
                     <img src="${currentMovie.Poster}" alt='..' width= 150px onerror="if (this.src != 'no_image.png') this.src='no_image.png'" alt="no image cap">
                     <h2>${currentMovie.Title}</h2> <hr />
                     <button id=saveBtn onClick="deleteFromWatchlist('${currentMovie.imdbID}')" class="btn btn-primary">Delete</button>
