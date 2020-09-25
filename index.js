@@ -4,7 +4,7 @@ let singleMovie = document.querySelector('.movies')
 // rendering movies on page 
 function renderMovies(movieData) {
     let movieHtmlArray = movieData.map((currentMovie) => {
-        axios.get(`http://www.omdbapi.com/?apikey=b43843a0&i=${currentMovie.imdbID}`)
+        axios.get(`https://www.omdbapi.com/?apikey=b43843a0&i=${currentMovie.imdbID}`)
         .then((response) => {
             movieContainer.innerHTML += (`
             <div class='col-sm-4 row'>
@@ -29,7 +29,7 @@ myForm.addEventListener('submit', function(e) {
     let searchString = document.getElementById('search').value
     let urlEncodedSearchString = encodeURIComponent(searchString);
 
-    axios.get(`http://www.omdbapi.com/?apikey=b43843a0&s=${urlEncodedSearchString}`)
+    axios.get(`https://www.omdbapi.com/?apikey=b43843a0&s=${urlEncodedSearchString}`)
     .then((res) => {
         movieData = res.data.Search
         // console.log(res.data.Search)
