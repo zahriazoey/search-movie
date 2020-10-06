@@ -1,9 +1,16 @@
-body {
-	background-image: url('./idin-ebrahimi-1Cbus2D8QYM-unsplash.jpg');
-	background-size:cover;
-	color: white;
-
+html {
+	background: url(georgia-vagim-ny-lHmsHYHk-unsplash.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	height: 100%
 }
+
+body {
+	background-color: transparent;
+}
+
 
 #search {
 	margin: 20px;
@@ -20,75 +27,30 @@ body {
 	text-decoration:underline;
 }
 
-a:visited {
-	color: white;
-}
-
-a:link {
-	color: white;
-}
 
 #search {
 	border: 1px solid white;
 	border-radius: 10px;
-	width: 10px;
 }
 
-body {
-	background-color: lightblue;
-}
 
 .row {
 	display: flex;
 	justify-content: space-evenly;
 }
-  
+
 .col {
 	flex-basis: 30%;
-	/* box-sizing: border-box; */
-	border: solid;
 	margin: 10px;
 	padding: 10px;
 	text-align: center;
 	border-radius: 5px;
+	background-color: lightgrey;
 }
-
-
-/* trending movies */
-.movies {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-}
-
-
-#singleMovieDiv {
-	border: 1px solid white;
-	border-radius: 10px;
-	text-align: center;
-	width: 20%;
-	height: auto;
-	margin: 5px;
-	padding: 8px;
-	font-size: 15px;
-	font-family: 'Noto Sans JP', sans-serif;
-}
-
-#trendingHeading {
-	display: flex;
-	justify-content: center;
-	text-align:center; 
-	font-family: 'Noto Sans JP', sans-serif;
-	margin: 5px auto;
-	width: 100%;
-}
-
-
 
 @media only screen and (max-width: 600px) {
 	.singleMovieDiv  {
 		font-size: 6x; 
-		/*here put anything you want for mobile size*/
 	}
   
 }

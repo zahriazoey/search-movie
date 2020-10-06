@@ -12,19 +12,28 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+
+    <header>
+      <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="/watchlist.html">Your Watchlist</a>
+      </nav>  
+    </header>
+
     <div class="container">
       <div class="row">
-        <div class="col-12 header text-center">
-          <h2 class="display-2">Scene It</h2>
+        <div class="text-center">
+          <h2 class="">Scene It</h2>
           <p>Search for movies you want to watch</p>
           <p>Save them to your list</p>
         </div>
       </div>
+
+
       <div class="row">
         <div class="col-12 search">
           <form id="search-form">
-            <div class="input-group input-group-lg">
-              <input
+            <div class="input-group input-group-md">
+              <input 
               class="form-control search-bar"
               placeholder="Search for a movie..."
               id='search'
@@ -32,21 +41,17 @@
               <button id='searchBtn' type="submit">
                 Search
               </button>
-              <button id='watchlistBtn'><a href="./watchlist.html">My Watchlist</a></button>
-                
             </div>
           </form>
         </div>
       </div>
+
+
+
       <div class="row">
         <div class="col-12 results">
           <!-- MOVIES SHOW UP HERE! -->
           <div class='moviesContainer row'>
-            <h1 id='trendingHeading'>TRENDING MOVIES</h1>
-            <div class='movies'>
-                </div>
-            </div>
-            </div>
           </div>
         </div>
       </div>

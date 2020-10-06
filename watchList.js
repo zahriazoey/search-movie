@@ -4,9 +4,9 @@ function renderMovies(movieData) {
     let movieHtmlArray = movieData.map((currentMovie) => {
         return `<div class='col-sm-4 row'>
                 <div class='col'>
-                    <img src="${currentMovie.Poster}" alt='..' width= 150px onerror="if (this.src != 'no_image.png') this.src='no_image.png'" alt="no image cap">
+                    <img src="${currentMovie.Poster}" alt='..' width= 100% onerror="if (this.src != 'no_image.png') this.src='no_image.png'" alt="no image cap">
                     <h2>${currentMovie.Title}</h2> <hr />
-                    <button id=saveBtn onClick="deleteFromWatchlist('${currentMovie.imdbID}')" class="btn btn-primary">Delete</button>
+                    <button id=saveBtn onClick="deleteFromWatchlist('${currentMovie.imdbID}')" class="btn btn-primary">Remove Movie</button>
                 </div>
             </div>`
         })
